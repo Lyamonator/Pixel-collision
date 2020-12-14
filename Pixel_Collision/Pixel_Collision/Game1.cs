@@ -17,6 +17,9 @@ namespace Pixel_Collision
 
         Player player;
         public bool touched;
+        
+        Texture2D healthTexture;
+        Rectangle healthRectangle;
 
         public Game1()
         {
