@@ -50,7 +50,7 @@ namespace Pixel_Collision
             player = new Player(100);
             player.Load(Content, GraphicsDevice);
             
-            healthTexture = Content.Load<Texture2D>("Health")
+            healthTexture = Content.Load<Texture2D>("health")
 
             Arial = Content.Load<SpriteFont>("Fonts/Arial");
             // TODO: use this.Content to load your game content here
