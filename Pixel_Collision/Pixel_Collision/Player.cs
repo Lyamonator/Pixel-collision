@@ -21,9 +21,11 @@ namespace Pixel_Collision
         public Color[] textureData;
 
 
-        public Player()
+        public Player(Texture2D newTexture, Vector2 newPosition, int newHealth)
         {
-
+          texture = newTexture;
+          position = newPosition;
+          health = newHelth;
         }
 
  
@@ -66,6 +68,7 @@ namespace Pixel_Collision
 
         public void Draw(SpriteBatch sprite)
         {
+            if (health > 0)
             sprite.Draw(
                 texture,
                 position,
