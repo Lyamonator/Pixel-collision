@@ -19,6 +19,8 @@ namespace Pixel_Collision
         GraphicsDevice graphics;
 
         public Color[] textureData;
+        
+        public int health;
 
 
         public Player(Texture2D newTexture, Vector2 newPosition, int newHealth)
