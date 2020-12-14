@@ -23,11 +23,9 @@ namespace Pixel_Collision
         public int health;
 
 
-        public Player(Texture2D newTexture, Vector2 newPosition, int newHealth)
+        public Player(newHealth)
         {
-          texture = newTexture;
-          position = newPosition;
-          health = newHelth;
+          health = newHealth;  
         }
 
  
