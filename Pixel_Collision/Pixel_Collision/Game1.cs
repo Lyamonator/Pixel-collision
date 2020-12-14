@@ -47,8 +47,10 @@ namespace Pixel_Collision
             cursorTextureData = new Color[cursorTexture.Width * cursorTexture.Height];
             cursorTexture.GetData(cursorTextureData);
 
-            player = new Player();
+            player = new Player(100);
             player.Load(Content, GraphicsDevice);
+            
+            healthTexture = Content.Load<Texture2D>("Health")
 
             Arial = Content.Load<SpriteFont>("Fonts/Arial");
             // TODO: use this.Content to load your game content here
@@ -76,7 +78,11 @@ namespace Pixel_Collision
             else
                 touched = false;
 
-
+            healthRectangle = new Rectangle (50, 20, player.health, 20);
+            
+            if (touched)
+            player.health -= 10;
+            
             player.Update(gameTime);
 
             base.Update(gameTime);
