@@ -103,6 +103,7 @@ namespace Pixel_Collision
             _spriteBatch.Begin();
             player.Draw(_spriteBatch);
             _spriteBatch.Draw(cursorTexture, cursorRectangle, Color.White);
+            _spriteBatch.Draw(healthTexture, healthRectangle, Color.White);
             _spriteBatch.DrawString(Arial, "Hello World", new Vector2(0, 0), Color.Black);
             _spriteBatch.End();
 
